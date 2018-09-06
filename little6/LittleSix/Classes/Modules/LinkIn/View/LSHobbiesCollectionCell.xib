@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LSHobbiesCell" id="gTV-IL-0wX" customClass="LSHobbiesCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="97" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="97" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlN-DO-3yi">
+                        <rect key="frame" x="0.0" y="10" width="97" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="音乐">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="selected">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="tagClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="vcS-Tq-U5w"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qlN-DO-3yi" secondAttribute="bottom" constant="10" id="DTG-2c-XpP"/>
+                <constraint firstAttribute="trailing" secondItem="qlN-DO-3yi" secondAttribute="trailing" id="bDu-Qv-swk"/>
+                <constraint firstItem="qlN-DO-3yi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="jje-sg-C3b"/>
+                <constraint firstItem="qlN-DO-3yi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yuK-6I-MLL"/>
+            </constraints>
+            <size key="customSize" width="97" height="70"/>
+            <connections>
+                <outlet property="tagBtn" destination="qlN-DO-3yi" id="v4n-E2-8mD"/>
+            </connections>
+            <point key="canvasLocation" x="-62" y="96"/>
+        </collectionViewCell>
+    </objects>
+</document>

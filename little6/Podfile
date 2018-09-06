@@ -1,0 +1,23 @@
+platform :ios, '9.0'
+use_frameworks!
+inhibit_all_warnings!
+
+
+target 'LittleSix' do
+  
+    pod 'ReactiveObjC'
+    pod 'UMengAnalytics'
+    pod 'Masonry'
+    pod 'Reachability'
+    pod 'FDFullscreenPopGesture'，：
+    pod 'AFNetworking'
+    pod 'FMDB’
+    pod 'SSZipArchive'
+    pod 'YYKit'
+    pod 'SocketRocket'
+    pod 'AMapNavi'
+    pod 'AMapSearch'
+    pod 'AMapLocation'
+    pod 'AMap3DMap', ‘4.6.1’
+    
+end

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ComfirmView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hey-sA-zFB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="N3R-48-186">
+                    <rect key="frame" x="0.0" y="368" width="320" height="200"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Kmc-LY-rbm"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="ndT-YQ-LMG"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Kfa-YW-vd8"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="N3R-48-186" secondAttribute="bottom" id="0Z8-4v-04l"/>
+                <constraint firstItem="N3R-48-186" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MOw-fj-ias"/>
+                <constraint firstAttribute="trailing" secondItem="hey-sA-zFB" secondAttribute="trailing" id="YMa-Bo-e12"/>
+                <constraint firstAttribute="bottom" secondItem="hey-sA-zFB" secondAttribute="bottom" id="cwR-dq-pMD"/>
+                <constraint firstItem="hey-sA-zFB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hcf-fD-TrR"/>
+                <constraint firstAttribute="trailing" secondItem="N3R-48-186" secondAttribute="trailing" id="vcK-hA-lky"/>
+                <constraint firstItem="hey-sA-zFB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wPo-mW-JeV"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="hey-sA-zFB" id="YMh-59-Icf"/>
+                <outlet property="tableView" destination="N3R-48-186" id="hfo-C7-k4m"/>
+                <outlet property="tableViewConstHeight" destination="Kmc-LY-rbm" id="FId-sm-8ph"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="355"/>
+        </view>
+    </objects>
+</document>

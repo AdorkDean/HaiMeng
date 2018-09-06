@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9bP-Tc-Rfw" customClass="LSFuwaPresentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wd-WP-tL2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                    <rect key="frame" x="15" y="190" width="344" height="287"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6kU-2Y-90e">
+                            <rect key="frame" x="29" y="95" width="202" height="40"/>
+                            <color key="backgroundColor" red="0.44705882352941173" green="0.039215686274509803" blue="0.023529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="202" id="B8G-G4-EYx"/>
+                                <constraint firstAttribute="height" constant="40" id="eWr-f3-FoU"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNV-ut-8ok">
+                            <rect key="frame" x="29" y="169" width="286" height="45"/>
+                            <color key="backgroundColor" red="0.82745098039215681" green="0.0" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="286" id="VZF-Pk-sbd"/>
+                                <constraint firstAttribute="height" constant="45" id="Zic-Fo-nIl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="确认赠送">
+                                <color key="titleColor" red="0.90588235289999997" green="0.81568627449999997" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sureBtnClick:" destination="9bP-Tc-Rfw" eventType="touchUpInside" id="hf9-FO-ptR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0J-G9-Zf5">
+                            <rect key="frame" x="294" y="20" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="DLo-Mj-8eH"/>
+                                <constraint firstAttribute="width" constant="30" id="NYn-8K-ymY"/>
+                            </constraints>
+                            <state key="normal" image="fuwa_close"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="接收人通过口令即可获得你赠送的福娃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UP-Lz-hID">
+                            <rect key="frame" x="57" y="230" width="230" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="230" id="4Mi-eJ-FyI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0b-Bv-Jmq">
+                            <rect key="frame" x="248" y="95" width="67" height="40"/>
+                            <color key="backgroundColor" red="0.82745098039215681" green="0.0" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="67" id="Sag-cG-wgC"/>
+                            </constraints>
+                            <state key="normal" image="scan"/>
+                            <connections>
+                                <action selector="codeAction:" destination="9bP-Tc-Rfw" eventType="touchUpInside" id="DsI-z7-Scv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.72156862745098038" green="0.11372549019607843" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="G0b-Bv-Jmq" firstAttribute="height" secondItem="6kU-2Y-90e" secondAttribute="height" id="17h-fo-eay"/>
+                        <constraint firstItem="sNV-ut-8ok" firstAttribute="top" secondItem="6kU-2Y-90e" secondAttribute="bottom" constant="34" id="1yl-Ne-O4f"/>
+                        <constraint firstItem="sNV-ut-8ok" firstAttribute="leading" secondItem="6kU-2Y-90e" secondAttribute="leading" id="3RJ-lo-cmb"/>
+                        <constraint firstItem="sNV-ut-8ok" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="877-wv-3Ed"/>
+                        <constraint firstAttribute="trailing" secondItem="o0J-G9-Zf5" secondAttribute="trailing" constant="20" id="8uZ-dl-At7"/>
+                        <constraint firstAttribute="width" constant="344" id="PUy-OY-vp1"/>
+                        <constraint firstItem="4UP-Lz-hID" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WBb-38-kUd"/>
+                        <constraint firstItem="o0J-G9-Zf5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="e45-S3-qUq"/>
+                        <constraint firstItem="G0b-Bv-Jmq" firstAttribute="centerY" secondItem="6kU-2Y-90e" secondAttribute="centerY" id="hsa-VD-iD3"/>
+                        <constraint firstAttribute="height" constant="287" id="k4N-es-PgN"/>
+                        <constraint firstItem="G0b-Bv-Jmq" firstAttribute="trailing" secondItem="sNV-ut-8ok" secondAttribute="trailing" id="n05-Fw-oDr"/>
+                        <constraint firstItem="4UP-Lz-hID" firstAttribute="top" secondItem="sNV-ut-8ok" secondAttribute="bottom" constant="16" id="no9-Im-PRX"/>
+                        <constraint firstItem="6kU-2Y-90e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="95" id="zc2-US-My0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4Wd-WP-tL2" secondAttribute="bottom" id="0sk-7d-tDn"/>
+                <constraint firstItem="4Wd-WP-tL2" firstAttribute="leading" secondItem="9bP-Tc-Rfw" secondAttribute="leading" id="7Nf-Kh-PXV"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="centerX" secondItem="9bP-Tc-Rfw" secondAttribute="centerX" id="BqG-XR-1dm"/>
+                <constraint firstAttribute="trailing" secondItem="4Wd-WP-tL2" secondAttribute="trailing" id="DNL-Gq-cct"/>
+                <constraint firstItem="4Wd-WP-tL2" firstAttribute="top" secondItem="9bP-Tc-Rfw" secondAttribute="top" id="JBc-mT-AXt"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="centerY" secondItem="9bP-Tc-Rfw" secondAttribute="centerY" id="Tb6-c8-7eh"/>
+            </constraints>
+            <connections>
+                <outlet property="BGBtn" destination="4Wd-WP-tL2" id="LrY-2C-OWB"/>
+                <outlet property="cancelBtn" destination="o0J-G9-Zf5" id="rTV-gW-mC6"/>
+                <outlet property="codeBtn" destination="G0b-Bv-Jmq" id="zU2-Lg-ZfK"/>
+                <outlet property="commandTextField" destination="6kU-2Y-90e" id="AcM-4f-NCh"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Oaa-dW-Bh6"/>
+                <outlet property="showView" destination="iN0-l3-epB" id="CfX-t9-Igv"/>
+                <outlet property="sureBtn" destination="sNV-ut-8ok" id="1CN-Sg-0jg"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="198"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fuwa_close" width="18" height="18"/>
+        <image name="scan" width="20" height="20"/>
+    </resources>
+</document>

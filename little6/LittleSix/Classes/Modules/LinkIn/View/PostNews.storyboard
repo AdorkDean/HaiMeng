@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4It-i5-ifb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="tuA-6c-2WW">
+            <objects>
+                <navigationController id="NRP-B0-pvf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jNK-KS-HKR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4It-i5-ifb" kind="relationship" relationship="rootViewController" id="PYJ-ME-TMA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ccm-Z9-mce" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1089" y="61"/>
+        </scene>
+        <!--Table Post View Controller-->
+        <scene sceneID="rNT-J1-fwy">
+            <objects>
+                <tableViewController storyboardIdentifier="LSTablePostViewController" id="4It-i5-ifb" customClass="LSTablePostViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="77e-cy-ocs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="D1c-0R-3wl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="300" id="bVO-72-ulr">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bVO-72-ulr" id="XHg-s0-Gua">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I8V-Lr-aQk">
+                                                    <rect key="frame" x="15" y="15" width="345" height="70"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="HZe-ru-Js5"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y27-5g-WeD">
+                                                    <rect key="frame" x="15" y="95" width="345" height="150"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="bjc-Ar-85g"/>
+                                                    </constraints>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6kv-ES-kVQ">
+                                                        <size key="itemSize" width="50" height="50"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JsI-d2-RRg">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                            </view>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="4It-i5-ifb" id="KM3-0k-YwH"/>
+                                                        <outlet property="delegate" destination="4It-i5-ifb" id="RDR-2M-qMb"/>
+                                                    </connections>
+                                                </collectionView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这一刻的想法..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFE-Ne-8xD">
+                                                    <rect key="frame" x="20" y="23" width="112" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="I8V-Lr-aQk" firstAttribute="leading" secondItem="XHg-s0-Gua" secondAttribute="leading" constant="15" id="AgN-bc-DGu"/>
+                                                <constraint firstItem="Y27-5g-WeD" firstAttribute="top" secondItem="I8V-Lr-aQk" secondAttribute="bottom" constant="10" id="DAx-Mm-JYI"/>
+                                                <constraint firstItem="mFE-Ne-8xD" firstAttribute="top" secondItem="XHg-s0-Gua" secondAttribute="top" constant="23" id="DON-Ae-Rpw"/>
+                                                <constraint firstItem="I8V-Lr-aQk" firstAttribute="top" secondItem="XHg-s0-Gua" secondAttribute="top" constant="15" id="DYd-7b-gLF"/>
+                                                <constraint firstAttribute="trailing" secondItem="I8V-Lr-aQk" secondAttribute="trailing" constant="15" id="GhW-FG-SiF"/>
+                                                <constraint firstItem="Y27-5g-WeD" firstAttribute="leading" secondItem="I8V-Lr-aQk" secondAttribute="leading" id="NFJ-Y5-mfy"/>
+                                                <constraint firstItem="mFE-Ne-8xD" firstAttribute="leading" secondItem="XHg-s0-Gua" secondAttribute="leading" constant="20" id="f16-Hm-Gsz"/>
+                                                <constraint firstItem="Y27-5g-WeD" firstAttribute="trailing" secondItem="I8V-Lr-aQk" secondAttribute="trailing" id="hMT-7j-FdP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="h3M-Zd-INk">
+                                <cells/>
+                            </tableViewSection>
+                        </sections>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="keyboardDismissMode">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="dataSource" destination="4It-i5-ifb" id="APb-Be-Psr"/>
+                            <outlet property="delegate" destination="4It-i5-ifb" id="XGJ-GE-Iaw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="mQw-2E-OVR"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Y27-5g-WeD" id="8LC-mC-23B"/>
+                        <outlet property="collectionViewConstHeight" destination="bjc-Ar-85g" id="rGr-ST-jLg"/>
+                        <outlet property="inputTextView" destination="I8V-Lr-aQk" id="RPz-VY-d5m"/>
+                        <outlet property="layout" destination="6kv-ES-kVQ" id="Xwo-IX-lhZ"/>
+                        <outlet property="placeHolder" destination="mFE-Ne-8xD" id="JOj-TL-I1Y"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7YB-O5-yAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="61"/>
+        </scene>
+    </scenes>
+</document>

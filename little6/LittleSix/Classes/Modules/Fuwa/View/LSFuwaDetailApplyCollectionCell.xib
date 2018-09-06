@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0uF-Wx-uKV" customClass="LSFuwaDetailApplyCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDb-mK-bFq">
+                    <rect key="frame" x="9" y="9" width="302" height="167"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="申请人:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmx-wp-RCW">
+                            <rect key="frame" x="110" y="69" width="182" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="l3Q-4X-oiX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用途:" textAlignment="natural" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7P-Ui-gkT">
+                            <rect key="frame" x="110" y="111" width="182" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="tCi-E4-piW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6号福娃" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WT-ff-t5e">
+                            <rect key="frame" x="110" y="32" width="66.5" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="90" id="g7C-q9-kyf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ot3-4J-bvH">
+                            <rect key="frame" x="0.0" y="32" width="100" height="115"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fuwa_model_bg" translatesAutoresizingMaskIntoConstraints="NO" id="6qQ-cP-wv9">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="115"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fuwa_model" translatesAutoresizingMaskIntoConstraints="NO" id="rtd-f7-So8">
+                                    <rect key="frame" x="10.5" y="18" width="80" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="1fc-c7-DeK"/>
+                                        <constraint firstAttribute="width" constant="80" id="cuA-aa-xeq"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="6qQ-cP-wv9" firstAttribute="top" secondItem="Ot3-4J-bvH" secondAttribute="top" id="DA3-EJ-lIZ"/>
+                                <constraint firstItem="6qQ-cP-wv9" firstAttribute="leading" secondItem="Ot3-4J-bvH" secondAttribute="leading" id="DVM-Uo-g6p"/>
+                                <constraint firstItem="rtd-f7-So8" firstAttribute="centerY" secondItem="Ot3-4J-bvH" secondAttribute="centerY" id="MRb-Ln-ONh"/>
+                                <constraint firstItem="rtd-f7-So8" firstAttribute="centerX" secondItem="Ot3-4J-bvH" secondAttribute="centerX" id="n2e-6L-ApW"/>
+                                <constraint firstAttribute="width" constant="100" id="n7g-vu-yp8"/>
+                                <constraint firstAttribute="trailing" secondItem="6qQ-cP-wv9" secondAttribute="trailing" id="ovk-m3-X8G"/>
+                                <constraint firstAttribute="bottom" secondItem="6qQ-cP-wv9" secondAttribute="bottom" id="p1O-Jn-iNd"/>
+                                <constraint firstAttribute="height" constant="115" id="pUI-Ig-R9h"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="V7P-Ui-gkT" firstAttribute="leading" secondItem="4WT-ff-t5e" secondAttribute="leading" id="3Gc-G0-Gh6"/>
+                        <constraint firstItem="tmx-wp-RCW" firstAttribute="top" secondItem="4WT-ff-t5e" secondAttribute="bottom" constant="15" id="5c4-oN-J1O"/>
+                        <constraint firstAttribute="trailing" secondItem="V7P-Ui-gkT" secondAttribute="trailing" constant="10" id="HHr-Fu-eDx"/>
+                        <constraint firstAttribute="trailing" secondItem="tmx-wp-RCW" secondAttribute="trailing" constant="10" id="KzS-ao-d52"/>
+                        <constraint firstItem="V7P-Ui-gkT" firstAttribute="bottom" secondItem="Ot3-4J-bvH" secondAttribute="bottom" id="UGf-lg-lTB"/>
+                        <constraint firstItem="4WT-ff-t5e" firstAttribute="top" secondItem="Ot3-4J-bvH" secondAttribute="top" id="Ylg-5A-unM"/>
+                        <constraint firstItem="tmx-wp-RCW" firstAttribute="leading" secondItem="4WT-ff-t5e" secondAttribute="leading" id="cf1-ZX-NsG"/>
+                        <constraint firstAttribute="bottom" secondItem="Ot3-4J-bvH" secondAttribute="bottom" constant="20" id="s4w-Xf-C5U"/>
+                        <constraint firstItem="Ot3-4J-bvH" firstAttribute="leading" secondItem="JDb-mK-bFq" secondAttribute="leading" id="tAp-FX-pLJ"/>
+                        <constraint firstItem="4WT-ff-t5e" firstAttribute="leading" secondItem="Ot3-4J-bvH" secondAttribute="trailing" constant="10" id="tRG-rF-4pv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JDb-mK-bFq" secondAttribute="trailing" constant="9" id="5jf-FX-Nph"/>
+                <constraint firstItem="JDb-mK-bFq" firstAttribute="top" secondItem="0uF-Wx-uKV" secondAttribute="top" constant="9" id="FhD-tq-DFT"/>
+                <constraint firstItem="JDb-mK-bFq" firstAttribute="leading" secondItem="0uF-Wx-uKV" secondAttribute="leading" constant="9" id="psC-64-egO"/>
+                <constraint firstAttribute="bottom" secondItem="JDb-mK-bFq" secondAttribute="bottom" constant="9" id="xdT-6z-EI6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="applyLabel" destination="tmx-wp-RCW" id="RNI-79-3gm"/>
+                <outlet property="iconImageView" destination="rtd-f7-So8" id="O98-jr-L7n"/>
+                <outlet property="nameLabel" destination="4WT-ff-t5e" id="BCv-d5-bry"/>
+                <outlet property="useLabel" destination="V7P-Ui-gkT" id="8gF-ET-cGf"/>
+            </connections>
+            <point key="canvasLocation" x="100" y="193.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fuwa_model" width="85" height="85"/>
+        <image name="fuwa_model_bg" width="100" height="140"/>
+    </resources>
+</document>
